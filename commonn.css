@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*-------
+
+リセットcss
+
+---------*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/*-------
+
+共通部分
+
+--------*/
+
+:root{
+    --background-color:#fff;
+    --primary-color:#333;
+    --scondaly-color:#F7F0D7;
+}
+body{
+color: var(--primary-color);
+background-color:white;
+}
+.container{
+    max-height: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/*-------
+
+ヘッダー
+
+-------*/
+
+header{
+    padding: 30px;
+    text-align: center;
+}
+header h1{
+font-size: clamp(28px,6vw,70px);
+}
+header nav ul{
+display: flex;
+justify-content: space-around;
+}
